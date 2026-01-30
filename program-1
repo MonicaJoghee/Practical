@@ -1,0 +1,20 @@
+CREATE TABLE Exs1 (
+    product_name VARCHAR(30),
+    product_id INTEGER,
+    pruchase_date VARCHAR(10)
+);
+
+INSERT INTO Exs1 VALUES ('spring day', 701, '20/01/2020');
+INSERT INTO Exs1 VALUES ('bulletproof', 702, '02/08/2020');
+INSERT INTO Exs1 VALUES ('friends', 703, '11/06/2020');
+INSERT INTO Exs1 VALUES ('fake love', 704, '25/03/2020');
+INSERT INTO Exs1 VALUES ('stay', 705, '15/12/2020');
+
+ALTER TABLE Exs1 ADD city VARCHAR(30);
+
+INSERT INTO Exs1 VALUES ('bluegrey', 724, '25/06/2020', 'SEOUL');
+
+SELECT * FROM Exs1;
+
+DROP TABLE Exs1;
+TRUNCATE TABLE Exs1;
