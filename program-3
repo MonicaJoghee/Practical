@@ -1,0 +1,17 @@
+CREATE TABLE exs4 (
+    item_id INTEGER,
+    item_name VARCHAR(20),
+    checkin_date VARCHAR(10),
+    item_price NUMBER(8,3),
+    branch_name VARCHAR(10),
+    consumer_name VARCHAR(10),
+    place VARCHAR(10)
+);
+
+INSERT INTO exs4 VALUES (12101, 'map of the soul', '07/04/2021', 578.90, 'kpop store', 'namjoon', 'seoul');
+INSERT INTO exs4 VALUES (12102, '2 cool 4 skool', '19/06/2021', 600.78, 'bighit', 'taehyung', 'paris');
+INSERT INTO exs4 VALUES (12103, 'face yourself', '31/08/2021', 453.12, 'pnation', 'kai', NULL);
+INSERT INTO exs4 VALUES (12104, 'you never walk alone', '27/10/2021', 399.01, 'jyp', 'jungkook', 'london');
+INSERT INTO exs4 VALUES (12105, 'wings', '11/12/2021', 638.34, 'hyin', 'suga', NULL);
+
+SELECT * FROM exs4;
