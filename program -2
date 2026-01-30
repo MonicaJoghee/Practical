@@ -1,0 +1,26 @@
+CREATE TABLE ex2 (
+    customer_id INTEGER PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    age INT,
+    location VARCHAR(10) NOT NULL
+);
+
+INSERT INTO ex2 VALUES (101, 'namjoon', 20, 'Coimbatore');
+INSERT INTO ex2 VALUES (102, 'suga', 22, 'Chennai');
+INSERT INTO ex2 VALUES (103, 'jhope', 21, 'Madurai');
+INSERT INTO ex2 VALUES (105, 'jungkook', 19, 'Theni');
+
+SELECT * FROM ex2;
+
+CREATE TABLE ord (
+    order_id INT PRIMARY KEY,
+    ordernumber INT NOT NULL,
+    customer_id INT REFERENCES ex2(customer_id)
+);
+
+INSERT INTO ord VALUES (121, 10254, 102);
+INSERT INTO ord VALUES (145, 10256, 101);
+INSERT INTO ord VALUES (135, 10285, 103);
+INSERT INTO ord VALUES (114, 11354, 105);
+
+SELECT * FROM ord;
