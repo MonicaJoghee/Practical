@@ -1,0 +1,14 @@
+DECLARE
+    num1 NUMBER := 10;
+    num2 NUMBER := 20;
+BEGIN
+    IF num1 < num2 THEN
+        dbms_output.put_line('num1 is small than num2');
+    ELSIF num1 = num2 THEN
+        dbms_output.put_line('num1 and num2 are equal');
+    ELSE
+        dbms_output.put_line('num2 is small than num1');
+    END IF;
+
+    dbms_output.put_line('after else if ladder');
+END;
